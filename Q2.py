@@ -1,11 +1,10 @@
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
-import matplotlib.lines as mlines
 import csv
 
 
-with open('VehicleData.csv.orig') as csvfile:
+with open('VehicleData.csv') as csvfile:
 
 	readCSV = csv.reader(csvfile, delimiter=',') 
 
@@ -26,7 +25,6 @@ with open('VehicleData.csv.orig') as csvfile:
 
 		#convert to ints
 		ConditionScore = map(int, ConditionScore)
-		VehicleID = map(int, VehicleID) 
 		FinancialYear = map(int, FinancialYear) 
 
 
@@ -57,7 +55,7 @@ N = 12
 ind = np.arange(N)  # the x locations for the groups
 width = 0.9
 fig, ax = plt.subplots()
-rects1 = ax.bar(ind, Y, width, color='lightblue', yerr=Yerr)
+rects1 = ax.bar(ind, Y, width, color='lightblue', yerr=Yerr, ecolor='black')
 
 ax.set_xticks(ind + 0.5)
 ax.set_xticklabels(('2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012'))
