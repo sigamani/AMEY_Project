@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import csv 
 
 
-with open('VehicleData.csv.orig') as csvfile:
+with open('VehicleData.csv') as csvfile:
 
 	readCSV = csv.reader(csvfile, delimiter=',') 
 

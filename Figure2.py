@@ -5,7 +5,7 @@ import matplotlib.lines as mlines
 import csv 
 
 
-with open('VehicleData.csv.orig') as csvfile:
+with open('VehicleData.csv') as csvfile:
 
 	readCSV = csv.reader(csvfile, delimiter=',') 
 

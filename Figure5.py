@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import csv 
 import math
 
-with open('VehicleData.csv.orig') as csvfile:
+with open('VehicleData.csv') as csvfile:
 
 	readCSV = csv.reader(csvfile, delimiter=',') 
 
@@ -197,27 +197,27 @@ with open('VehicleData.csv.orig') as csvfile:
         #print "Mean (10)\t = %f, error = %f %%" %(mean10,std10/mean10*100)
 
 		
-m1 = np.mean(Y1)
-m2 = np.mean(Y2)
-m3 = np.mean(Y3)
-m4 = np.mean(Y4)
-m5 = np.mean(Y5)
-m6 = np.mean(Y6)
-m7 = np.mean(Y7)
-m8 = np.mean(Y8)
-m9 = np.mean(Y9)
-m10 = np.mean(Y10)
+#m1 = np.mean(Y1)
+#m2 = np.mean(Y2)
+#m3 = np.mean(Y3)
+#m4 = np.mean(Y4)
+#m5 = np.mean(Y5)
+#m6 = np.mean(Y6)
+#m7 = np.mean(Y7)
+#m8 = np.mean(Y8)
+#m9 = np.mean(Y9)
+#m10 = np.mean(Y10)
 
-print "1 = %f" %m1
-print "2 = %f" %m2
-print "3 = %f" %m3
-print "4 = %f" %m4
-print "5 = %f" %m5
-print "6 = %f" %m6
-print "7 = %f" %m7
-print "8 = %f" %m8
-print "9 = %f" %m9
-print "10 = %f" %m10
+#print "1 = %f" %m1
+#print "2 = %f" %m2
+#print "3 = %f" %m3
+#print "4 = %f" %m4
+#print "5 = %f" %m5
+#print "6 = %f" %m6
+#print "7 = %f" %m7
+#print "8 = %f" %m8
+#print "9 = %f" %m9
+#print "10 = %f" %m10
 		
 N = 12
 ind = np.arange(N)  # the x locations for the groups
