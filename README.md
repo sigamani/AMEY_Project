@@ -1,1 +1,1 @@
-Run files in Unix session as: "python Q1.py" to produce necessary plots 
+Run files in Unix session as: "python Figure[*].py" to produce necessary plots 
